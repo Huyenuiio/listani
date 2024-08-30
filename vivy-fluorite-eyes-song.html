@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivy: Fluorite Eye's Song</title>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #0b1622;
+            color: #9FADBD;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+        #video-player {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            margin-bottom: 20px;
+        }
+        #episode-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .episode-button {
+            padding: 10px;
+            background-color: #151f2e;
+            border: none;
+            cursor: pointer;
+            color: #9FADBD;
+            border-radius: 4px;
+        }
+        .episode-button:hover {
+            background-color: #1d232e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vivy: Fluorite Eye's Song</h1>
+    <div id="video-player">
+        <iframe width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="episode-list">
+        <!-- Các nút tập sẽ được thêm vào đây bằng JavaScript -->
+    </div>
+
+    <script>
+        const episodes = [
+            { number: 1, url: "https://example.com/vivy-episode-1" },
+            { number: 2, url: "https://example.com/vivy-episode-2" },
+            { number: 3, url: "https://example.com/vivy-episode-3" },
+            { number: 4, url: "https://example.com/vivy-episode-4" },
+            { number: 5, url: "https://example.com/vivy-episode-5" },
+            // Thêm các tập khác vào đây
+        ];
+
+        const videoPlayer = document.querySelector('#video-player iframe');
+        const episodeList = document.getElementById('episode-list');
+
+        episodes.forEach(episode => {
+            const button = document.createElement('button');
+            button.textContent = `Tập ${episode.number}`;
+            button.classList.add('episode-button');
+            button.addEventListener('click', () => {
+                videoPlayer.src = episode.url;
+            });
+            episodeList.appendChild(button);
+        });
+    </script>
+</body>
+</html>

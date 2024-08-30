@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- custom css  -->
+     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">	
+     <title>Neeeyuh</title>
+     <link rel="icon" href="" type="jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+  <a href="#home">Trang Chủ</a>
+  <a href="#news">Anime Mới</a>
+  <a href="#contact">Liên Hệ</a>
+  <a href="#about">Về Chúng Tôi</a>
+</div>
+<!-- 
+<h1>Neeeyuh</h1> -->
+<div class="form-field">
+<!-- Thanh tìm kiếm -->
+<input type="search" id="site-search"   class="form-input"     onkeyup="searchAnime()" name="q"
+       aria-label="Tìm kiếm trên trang web"
+       placeholder=" "
+       pattern=".*\S.*" required/>
+
+       <label for="name" class="form-label">Tìm kiếm anime...</label>
+
+    </div>
+
+
+
+
+
+
+
+
+<div class="grid-container" id="animeGrid">
+         <!-- Một mục anime -->
+    <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+        <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+        <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+        <a href="vivy-fluorite-eyes-song.html">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx128546-UIwyhuhjxmL0.jpg" alt="Vivy: Fluorite Eye’s Song">
+             <strong><a><br>Vivy: Fluorite Eye’s Song<br></a> </strong>
+            <a href="vivy-fluorite-eyes-song.html"><button>Xem Anime</button></a>
+        </a>
+        <!-- Popup với nội dung anime -->
+        <div class="popup">
+            Câu chuyện Vivy – Fluorite Eye’s Song diễn ra ở “Nearland”, một công viên giải trí AI, nơi “ước mơ, hy vọng và khoa học” cùng tồn tại. Công viên giải trí là nơi AI đầu tiên kiểu người tự động ra đời. Vivy là một AI hát trên sân khấu cho những người tham dự công viên mỗi ngày, vì chỉ thị của cô ấy là “làm cho mọi người hạnh phúc qua những bài hát.” Cô biểu diễn hết lòng vì những người tham dự trong công viên. Một ngày nọ, một AI tên là Matsumoto xuất hiện trước mặt cô, nói rằng anh đến từ 100 năm sau ở tương lai với chỉ thị “làm việc với Vivy để sửa chữa lịch sử và ngăn chặn cuộc chiến giữa AI và con người nổ ra”. Hành trình cứu lấy 100 năm của nữ ca sĩ AI Vivy bắt đầu.
+        </div>
+    </div>
+            <!-- Các mục anime khác -->
+             
+            <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+                <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+                <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+                <a href="https://huyenuiio.github.io/FateApocrypha/">
+                    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98035-rdkjeqUUsG2j.jpg" alt="FateApocrypha">
+                  <strong>   <a><br>Fate/Apocrypha<br></a> </strong>
+                    <a href="https://huyenuiio.github.io/FateApocrypha/"><button>Xem Anime</button></a>
+                </a>
+                <!-- Popup với nội dung anime -->
+                <div class="popup">Trong quá khứ, một Cuộc Chiến Chén Thánh đã nổ ra tại thành phố Fuyuki bởi 7 Master và 7 Servant. Tuy nhiên, 1 pháp sư đã lợi dụng sự hỗn loạn trong cuộc Thế Chiến thứ II để đánh cắp Chén Thánh. Nhiều thập kỉ trôi qua, gia tộc Yggdmillennia - nơi xem Chén Thánh là biểu tượng của mình - đã quyết định li khai khỏi Hội Pháp Sư. Để đối phó gia tộc nổi loạn này, Hội Pháp Sư đã cử đi đội quân tinh nhuệ nhất của mình, nhưng tất cả đều đã bị đánh bại bởi Servant mà nhà Yggdmillennia triệu hồi. Người sống sót cuối cùng trong 50 pháp sư đã kịp kích hoạt cơ chế dự phòng của Đại Chén Thánh, cho phép 7 Master và 7 Servant mới tham gia trận chiến. Từ đó, cuộc Đại Chiến Chén Thánh đã được mở màn, giữ những thành viên gia tộc Yggdmillennia và các Master của Hội Pháp Sư.</div>
+            </div>
+
+  
+  
+   <!-- Các mục anime khác -->
+             
+            <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+                <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+                <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+                <a href="https://huyenuiio.github.io/Violet-Evergarden/">
+                    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21827-10F6m50H4GJK.png" alt="Violet Evergarden">
+                  <strong>   <a><br>Violet Evergarden<br></a> </strong>
+                    <a href="https://huyenuiio.github.io/Violet-Evergarden/"><button>Xem Anime</button></a>
+                </a>
+                <!-- Popup với nội dung anime -->
+                <div class="popup">Có một câu nói Violet đã được nghe trong khoảnh khắc sinh tử khi cô còn ở chiến trường khốc liệt. Một câu nói mà cô không bao giờ quên được. Lời nói đến từ một người cô yêu thương và kính trọng hơn bất kỳ ai, nhưng cô không thể hiểu được ý nghĩa của nó. Tại lục địa Telesis, cuộc đại chiến chia cắt lục địa thành hai phần Bắc và Nam cuối cùng cũng đã kết thúc sau 4 năm, và người dân đang chào đón một thời đại mới.</div>
+            </div>
+  
+   <!-- Các mục anime khác -->
+             
+            <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+                <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+                <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+                <a href="https://huyenuiio.github.io/Kobayashi-san-Chi-no-Maidragon/">
+                    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21776-FJiPcLQHeTiV.png" alt="Kobayashi-san Chi no Maidragon">
+                    <strong> <a><br>Kobayashi-san Chi no Maidragon<br></a> </strong>
+                    <a href="https://huyenuiio.github.io/Kobayashi-san-Chi-no-Maidragon/"><button>Xem Anime</button></a>
+                </a>
+                <!-- Popup với nội dung anime -->
+                <div class="popup">Kobayashi là một nữ nhân viên văn phòng bình thường, sống cuộc sống độc thân nhàm chán trong căn hộ nhỏ của mình, cho đến khi cô cứu mạng một con rồng cái gặp nạn. Con rồng tên là Tohru, có khả năng biến hình thành một bé gái vô cùng Moe (là kiểu nhân vật nữ đáng yêu, hồn nhiên vô số tội), và hứa nhất định sẽ đền ơn dù Kobayashi có muốn hay không. Với người bạn cùng phòng là một con rồng rất kiên trì và đầy “ham muốn”, cuộc sống của Kobayashi có vẻ như ngày một tệ hơn.</div>
+            </div>
+  
+   <!-- Các mục anime khác -->
+             
+            <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+                <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+                <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+                <a href="https://huyenuiio.github.io/Miss-Kobayashi-s-Dragon-Maid-S/">
+                    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107717-bixaW1NTGBra.jpg" alt="Miss Kobayashi's Dragon Maid S">
+                    <strong> <a><br>Miss Kobayashi's Dragon Maid S<br></a> </strong>
+                    <a href="https://huyenuiio.github.io/Miss-Kobayashi-s-Dragon-Maid-S/"><button>Xem Anime</button></a>
+                </a>
+                <!-- Popup với nội dung anime -->
+                <div class="popup">Mùa thứ hai của Kobayashi-san Chi no Maidragon. Một biến cố kỳ lạ dẫn đến việc con rồng, Tohru, trở thành người giúp việc của cô Kobayashi. Cô ấy thỉnh thoảng (đó là một lời nói dối, cô ấy thường xuyên) gây rắc rối cho cô Kobayashi yêu quý của mình trong khi hòa nhập vào xã hội loài người và lộng lẫy (đó là một lời nói dối, chỉ tầm thường) thực hiện nhiệm vụ người hầu gái của mình. Những con rồng đồng loại của cô, Kanna, Lucoa, Fafnir và Elma, tất cả đều tìm thấy vị trí của riêng mình để hòa nhập và tận hưởng tương tác giữa các loài với con người. Tuy nhiên, trong khi tất cả họ đang tận hưởng sự thoải mái và đôi khi hỗn loạn bên trái, mối đe dọa về một con Rồng mới ập xuống cô Kobayashi.</div>
+            </div>
+  
+  
+  <!-- Các mục anime khác -->
+             
+            <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+                <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+                <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+                <a href="https://huyenuiio.github.io/Darling-in-the-Franxx/">
+                    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx99423-8MBxtwCeHf8B.png" alt="Darling in the Franxx">
+                   <strong>  <a><br>Darling in the Franxx<br></a> </strong>
+                    <a href="https://huyenuiio.github.io/Darling-in-the-Franxx/"><button>Xem Anime</button></a>
+                </a>
+                <!-- Popup với nội dung anime -->
+                <div class="popup"> Đây là câu chuyện ở tương lai xa xôi nghìn dặm. Đất bị nứt, và nhân loại phải thành lập một pháo đài di động Plantation. Trẻ em ở thời đó chẳng biết bầu trời của tự do là gì cả cuộc sống chỉ là chiến đấu và hoàn thành nhiệm vụ. Kẻ thù của họ được gọi là Kyouryuu và các con robot mang tên Franxx ra sức tấn công. Đối với bọn trẻ, cưỡi Franxx là sự sống còn của chúng.</div>
+            </div>
+  
+  
+   <!-- Các mục anime khác -->
+             
+            <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+                <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+                <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+                <a href="https://huyenuiio.github.io/Kono-Subarashii-Sekai-ni-Shukufuku-wo-/">
+                    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21202-TfzXuWQf2oLQ.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
+                    <strong> <a><br>Kono Subarashii Sekai ni Shukufuku wo!<br></a> </strong>
+                    <a href="https://huyenuiio.github.io/Kono-Subarashii-Sekai-ni-Shukufuku-wo-/"><button>Xem Anime</button></a>
+                </a>
+                <!-- Popup với nội dung anime -->
+                <div class="popup">Satou Kazuma là một cậu học sinh cao trung mê game, nghiện truyện, ghiền anime, và là một hikikomori (người sống tách biệt với xã hội) chính hiệu. Nhưng cuộc đời vô dụng của cậu đã kết thúc nhanh gọn. Sau một tai nạn "thương tâm", Kazuma đã lìa đời. Cứ ngỡ mọi chuyện đến đây là hết, nhưng cậu bất ngờ tỉnh dậy ở một chiều không gian kỳ lạ nào đó và bắt gặp một cô gái xinh xắn tự nhận mình là nữ thần tên là Aqua. Cô nàng đưa hai lựa chọn cho anh chàng: một là bay lên thiên đàng, hai là hồi sinh trong thế giới giả tưởng - ước mơ của mọi game thủ. Kazuma đã lựa chọn bắt đầu cuộc sống tại thế giới mới, và nhiệm vụ cậu phải đối mặt đó là đánh bại Chúa Quỷ - kẻ đang chi phối toàn bộ dân làng. Nhưng trước khi lên đường, cậu được chọn một thứ để mang theo, giúp đỡ cậu hoàn thành nhiệm vụ. Vị anh hùng tương lai đã không ngần ngại mà chọn ngay "bà thần" Aqua - và đó chính là lựa chọn sai lầm nhất đời cậu - Aqua là một "bà thần" cực kì ăn hại!</div>
+            </div>
+  
+   <!-- Các mục anime khác -->
+             
+            <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+                <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+                <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+                <a href="https://huyenuiio.github.io/Dororo/">
+                    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx101347-2J2p8qJpxpfZ.jpg" alt="Dororo">
+                     <strong><a><br>Dororo<br></a> </strong>
+                    <a href="https://huyenuiio.github.io/Dororo/"><button>Xem Anime</button></a>
+                </a>
+                <!-- Popup với nội dung anime -->
+                <div class="popup">Câu chuyện lấy bối cảnh vào giữa thời đại Muromachi, vào khoảng thập niên 70 của thế kỉ 15, sau trận chiến của Onin và Bunmei. Câu chuyện kể về Hyakkimaru - một chàng trai trẻ khi mới sinh ra là đã bị mất 48 bộ phận trên cơ thể. Điều bi thảm mà anh phải gánh chịu này là do cha của anh - Kagemitsu Daigo - đã lập một lời hứa với bọn quỷ dữ, vì ông muốn thống trị đất nước này. Cái giá cho lời hứa đó chính là 48 bộ phận trên cơ thể của Hyakkimaru. Vì thế, vừa mới sinh ra, Hyakkimaru đã bị khuyết tật đầy mình và bị gia đình ruồng bỏ, thả anh trôi sông. Hyakkimaru giờ đã trưởng thành và anh lắp trên người mình những phần cơ thể giả để có thể tiêu diệt 48 con quỷ, nhằm lấy lại những phần cơ thể của mình. Trên cuộc hành trình ấy, anh đã gặp gỡ cậu nhóc Dororo và hai người trở thành bạn.</div>
+            </div>
+  
+   <!-- Các mục anime khác -->
+             
+            <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+                <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+                <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+                <a href="https://huyenuiio.github.io/Boku-dake-ga-Inai-Machi/">
+                    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21234-bCvWk2f58LCv.jpg" alt="Boku dake ga Inai Machi">
+                  <strong>   <a><br>Boku dake ga Inai Machi<br></a> </strong>
+                    <a href="https://huyenuiio.github.io/Boku-dake-ga-Inai-Machi/"><button>Xem Anime</button></a>
+                </a>
+                <!-- Popup với nội dung anime -->
+                <div class="popup">Satoru Fujinuma là một họa sĩ manga với khả năng quay ngược thời gian và ngăn chặn cái chết. Khi mẹ của cậu ta bị giết, cậu quay trở về quá khứ để giải bí ẩn ấy. Thế nhưng lại dừng tại thời điểm học tiểu học, chỉ trước khi bạn cùng lớp của cậu, Kayo, biến mất.</div>
+            </div>
+  
+  
+   <!-- Các mục anime khác -->
+             
+            <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+                <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+                <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+                <a href="https://huyenuiio.github.io/Vanitas-no-Carte/">
+                    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131646-k6u2UXIsMXEa.jpg" alt="Vanitas no Carte">
+                     <strong><a><br>Vanitas no Carte<br></a> </strong>
+                    <a href="https://huyenuiio.github.io/Vanitas-no-Carte/"><button>Xem Anime</button></a>
+                </a>
+                <!-- Popup với nội dung anime -->
+                <div class="popup">Tại Paris, những tin đồn xoay quanh cuốn sách của Vanitas, một cuốn ma đạo thư đáng ngờ, đã lôi kéo sự chú ý của Noe, một ma cà rồng trẻ đang tìm kiếm sự cứu rỗi cho một người bạn. Tuy nhiên, điều chờ đợi anh ở đây không phải là hàng giờ đồng hồ giẫm chân lên vỉa hè hay lướt qua các hiệu sách đầy bụi để tìm kiếm cuốn sách. Thay vào đó, thông tin anh đang tìm kiếm đang nằm trong tay một người đàn ông tự xưng là bác sĩ ma cà rồng!</div>
+            </div>
+  
+  
+  
+  
+  
+   <!-- Các mục anime khác -->
+             
+            <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+                <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+                <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+                <a href="https://huyenuiio.github.io/Seirei-Gensouki/">
+                    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126546-Jujx9OvKxLzA.jpg" alt="Seirei Gensouki">
+                    <strong> <a><br>Seirei Gensouki<br></a> </strong>
+                    <a href="https://huyenuiio.github.io/Seirei-Gensouki/"><button>Xem Anime</button></a>
+                </a>
+                <!-- Popup với nội dung anime -->
+                <div class="popup">Amakawa Haruto, một sinh viên bị tai nạn chết đi trong khi vẫn nặng lòng về mối tình đầu thuở ấu thơ với Ayase Miharu. Hắn được chuyển sinh sang một thế giới khác sống với thân phận Rio nhưng vẫn lưu giữ ký ức của tiền kiếp.</div>
+            </div>
+  
+  
+   <!-- Các mục anime khác -->
+             
+            <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+                <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+                <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+                <a href="https://huyenuiio.github.io/Fate-Grand-Order-Zettai-Majuu-Sensen-Babylonia/">
+                    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx103275-SN0wwshS3tWA.jpg" alt="Fate/Grand Order: Zettai Majuu Sensen Babylonia">
+                   <strong>  <a><br>Fate/Grand Order: Zettai Majuu Sensen Babylonia<br></a> </strong>
+                    <a href="https://huyenuiio.github.io/Fate-Grand-Order-Zettai-Majuu-Sensen-Babylonia/"><button>Xem Anime</button></a>
+                </a>
+                <!-- Popup với nội dung anime -->
+                <div class="popup">Một điểm kỳ dị thứ bảy đã được phát hiện ở Lưỡng Hà cổ đại vào năm 2655 trước Công nguyên Vùng đất Uruk, được cai quản bởi Vua Gilgamesh thông thái sau khi ông trở về sau hành trình tìm kiếm sự bất tử, trở nên hùng vĩ và thịnh vượng cho đến khi ba nữ thần và vô số Ma thú xuất hiện. Những kẻ thù này đã đưa Uruk đến bờ vực diệt vong. Với Rayshift — một phương pháp du hành xuyên cả thời gian và không gian — Fujimaru và Mash hành trình đến vùng đất Uruk, nơi họ chạm trán với thành phố pháo đài Uruk và Mặt trận quỷ tuyệt đối, nơi diễn ra trận chiến khủng khiếp chống lại sự tấn công đáng sợ của Ma thú những cơn thịnh nộ. Ở đó, những công dân của Uruk, những người sống hết mình mặc dù phải đối mặt với một mối đe dọa hiện hữu, vẫn tiếp tục chiến đấu cho tương lai của họ. Các vị thần và Ma thú tấn công với sức mạnh đáng sợ, và loài người dùng hết sức đẩy lùi ... Đây là thời đại mà con người và các vị thần được định sẵn là chia tay nhau. Fujimaru và Mash, cặp đôi đã chiến đấu qua tất cả sáu kỳ dị trước đó, bắt tay vào trận chiến cuối cùng của họ</div>
+            </div>
+  
+  
+  <!-- Các mục anime khác -->
+             
+            <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+                <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+                <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+                <a href="https://huyenuiio.github.io/Shigatsu-Wa-Kimi-No-Uso">
+                    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20665-zuhC5OO6XgZ7.png" alt="Shigatsu wa Kimi no Uso">
+                   <strong>  <a><br>Shigatsu wa Kimi no Uso<br></a> </strong>
+                    <a href="https://huyenuiio.github.io/Shigatsu-Wa-Kimi-No-Uso"><button>Xem Anime</button></a>
+                </a>
+                <!-- Popup với nội dung anime -->
+                <div class="popup">Câu chuyện kể về Arima Kosei, một thần đồng piano. Nhưng kể từ sau chấn động tâm lí do cái sự qua đời của mẹ cậu, Kosei đã không thể nghe thấy bất kì âm thanh nào. Cứ tưởng là cậu sẽ không bao giờ động vào những phím piano nữa nhưng đó là trước khi cậu đã gặp Miyazono Kaori...</div>
+            </div>
+  
+  
+   <!-- Các mục anime khác -->
+             
+            <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+                <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+                <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+                <a href="https://huyenuiio.github.io/takt-op.Destiny">
+                    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131565-3W2YEX6V3K3i.jpg" alt="takt op.Destiny">
+                   <strong><a><br>takt op.Destiny<br></a> </strong>
+                    <a href="https://huyenuiio.github.io/takt-op.Destiny"><button>Xem Anime</button></a>
+                </a>
+                <!-- Popup với nội dung anime -->
+                <div class="popup">Xoay quanh câu chuyện về Takt, một nhạc trưởng, đã hợp tác với một Musicart tên Unmei. Cậu mong muốn âm nhạc được quay trở lại thế giới, còn Unmei mong muốn phá hủy D2. Vì thế cả hai đã cùng đồng hành để có thể thực hiện mục tiêu của mỗi người.</div>
+            </div>
+  
+  
+  
+    <!-- Các mục anime khác -->
+             
+            <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+                <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+                <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+                <a href="https://huyenuiio.github.io/Mieruko-chan">
+                    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131083-fMWFyOFgp6vb.png" alt="Mieruko-chan">
+                   <strong><a><br>Mieruko chan<br></a> </strong>
+                    <a href="https://huyenuiio.github.io/Mieruko-chan"><button>Xem Anime</button></a>
+                </a>
+                <!-- Popup với nội dung anime -->
+                <div class="popup">Bộ truyện xoay quanh Miko Yotsuya, một nữ sinh bình thường có năng lực không bình thường chút nào: đó là có thể nhìn thấy các hồn ma kỳ dị xung quanh mình. Cô cố gắng hết sức phớt lờ chúng để sống cuộc sống bình thường, nhưng điều này càng lúc càng bất khả thi vì đi đâu cô cũng nhìn thấy "chúng". Nhiều sinh vật thậm chí còn bị thu hút bởi khả năng của Miko và người bạn thân nhất của cô, Hana. Hana bẩm sinh có luồng năng lượng vô cùng dồi dào, khiến cô trở thành mục tiêu của nhiều sinh vật kinh hoàng mà không hề hay biết.</div>
+            </div>
+  
+  
+  
+  
+   <!-- Các mục anime khác -->
+             
+            <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+                <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+                <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+                <a href="https://huyenuiio.github.io/Sekai-Saikou-no-Ansatsusha-Isekai-Kizoku-ni-Tensei-suru/">
+                    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx129898-FRUzDtPhRigt.jpg" alt="Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru">
+                   <strong><a><br>Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru<br></a></strong>
+                    <a href="https://huyenuiio.github.io/Sekai-Saikou-no-Ansatsusha-Isekai-Kizoku-ni-Tensei-suru/"><button>Xem Anime</button></a>
+                </a>
+                <!-- Popup với nội dung anime -->
+                <div class="popup">“Tôi sẽ sống cho chính mình!” Sát thủ vĩ đại nhất trên trái đất chỉ biết cách sống như một công cụ cho chủ nhân của mình – cho đến khi họ ngừng để anh ta sống. Được tái sinh bởi ân sủng của một nữ thần vào thế giới của kiếm và ma thuật, lần này anh ta có cơ hội để làm những điều khác đi, nhưng có một bí quyết… Anh ta phải loại bỏ một anh hùng siêu mạnh, người sẽ dẫn đến kết cục thế giới trừ khi anh ta bị dừng lại.Bây giờ được biết đến với cái tên Lugh Tuatha Dé, sát thủ bậc thầy chắc chắn đã bó tay, đặc biệt là vì toàn những cô gái xinh đẹp luôn vây quanh anh ta. Dù có thể là một kẻ giết người không thể so sánh được, nhưng anh ta sẽ chống lại kẻ thù bằng phép thuật mạnh mẽ như thế nào?</div>
+            </div>
+  
+  
+  
+  <!-- Các mục anime khác -->
+             
+            <div class="grid-item"  onmouseover="showPopup(this)" onmouseout="hidePopup(this)">   
+                <!-- onmouseover="showPopup(this)" onmouseout="hidePopup(this) -->
+                <!-- Thêm thẻ <a> vào hình ảnh và nút -->
+                <a href="https://huyenuiio.github.io/Kimetsu-no-Yaiba-Mugen-Ressha-hen-TV-/">
+                    <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx129874-g6ZKXB94Hui1.jpg" alt="Kimetsu no Yaiba: Mugen Ressha-hen (TV)">
+                   <strong><a><br>Kimetsu no Yaiba: Mugen Ressha-hen (TV)<br></a></strong>
+                    <a href="https://huyenuiio.github.io/Kimetsu-no-Yaiba-Mugen-Ressha-hen-TV-/"><button>Xem Anime</button></a>
+                </a>
+                <!-- Popup với nội dung anime -->
+                <div class="popup">Vào thời xa xưa, có một truyền thuyết về những con quỷ ăn thịt người luôn lảng vảng trong cánh rừng sâu. Vì điều này, người dân trong làng không bao giờ đi ra ngoài vào trời tối. Truyền thuyết cũng kể rằng có một Sát Quỷ Nhân luôn xuất hiện vào ban đêm để tiêu diệt những con quỷ khát máu này. Đối với chàng trai trẻ Tanjiro, câu chuyện dân gian ấy đã trở thành hiện thực cay đắng mà cậu phải hứng chịu... Sau khi cha cậu qua đời, Tanjiro luôn cố gắng hết sức để trở thành trụ cột trong gia đình. Dù cuộc sống vất vả, cực khổ, những gia đình của cậu vẫn luôn ngập tràn hạnh phúc. Nhưng niềm hạnh phúc ấy cũngkhông kéo dài lâu được. Một ngày nọ, khi Tanjiro trở về, cậu phát hiện gia đình mình đã bị sát hại dã man, và chỉ có một người duy nhất sống sót, đó là em gái Nezuko của cậu. Nhưng bi kịch thay, Nezuko đã trở thành con quỷ đáng sợ. Tuy nhiên, cô vẫn còn giữ một chút nhân tính. Đó là thời điểm bắt đầu cuộc chiến đơn độc của Tanjiro, tiêu diệt quỷ và tìm cách biến em gái mình trở lại làm người.</div>
+            </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+<script src="app.js"></script>
+</body>
+</html>
