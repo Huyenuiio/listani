@@ -1,121 +1,59 @@
-    /* Thêm một số kiểu chung cho trang */
-    body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #0b1622;
-        color: #9FADBD;
-        font-family: 'Quicksand', sans-serif;
-    }
-    h1 {
-        text-align: center;
-        padding: 20px;
-        color: #fff;
-        background-color: #007BFF;
-        border-bottom: 5px solid #0056b3;
+   /* Thêm một số kiểu chung cho trang */
+   body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0b1622;
+    color: #9FADBD;
+    font-family: 'Quicksand', sans-serif;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background-color: #007BFF;
+    border-bottom: 5px solid #0056b3;
 
-    }
-    /* Cải thiện kiểu cho thanh tìm kiếm */
-    /* #site-search {
-        display: block;
-        width: 80%;
-        max-width: 600px;
-        margin: 20px auto;
-        padding: 10px;
-        border: 1px solid #151f2e;
-        border-radius: 4px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        font-family: 'Quicksand', sans-serif;
-        background-color: #151f2e;
-        color: #9FADBD;
-        
-    } */
-    .form-input{
-        display: block;
-        width: 80%;
-        max-width: 600px;
-        margin: 20px auto;
-        padding: 10px;
-        border: 1px solid #151f2e;
-        border-radius: 4px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        font-family: 'Quicksand', sans-serif;
-        background-color: #151f2e;
-        color: #9FADBD;
-        /* border: 1px solid #eee; */
-        transform: 0.25 ease;
-    }
-
-    .form-input:focus {
-       /* border-color: #0056b3; */
-        outline: none;
-        border-color: #007BFF;
-    }
-
-    .form-field{
-        position: relative;
-    }
-
-.form-label{
-    position: absolute;
-    top: 10px;
-    transform: translate(250px);
-    left: 21px;
+}
+/* Cải thiện kiểu cho thanh tìm kiếm */
+#site-search {
+    display: block;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #151f2e;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Quicksand', sans-serif;
+    background-color: #151f2e;
+    color: #9FADBD;
     
-    user-select: none;
-    color: #999;
-    pointer-events: none;
-    transition: 0.25s ease;
 }
-
-.form-input:not(:placeholder-shown) + .form-label,
-.form-input:focus + .form-label{
-top: -9px;
-left: 11px;
-padding:  0 10px;
-display: inline-block;
-background-color: #0b1622;
-color:#007BFF;
+/* Cải thiện kiểu cho lưới và các mục */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* Cải thiện kiểu cho lưới và các mục */
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 10px;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-    .grid-item {
-        border: 1px solid #151f2e;
-        padding: 1px;
-        box-sizing: border-box;
-        background-color: #151f2e;
-        border-radius: 4px;
-        text-align: center;
-        transition: all 0.3s ease;
-        /* position: relative; Đặt vị trí tương đối để popup có thể hiển thị đúng vị trí */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .grid-item:hover {
-        transform: scale(1.05);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-   /* Cải thiện kiểu cho popup */
+.grid-item {
+    border: 1px solid #151f2e;
+    padding: 1px;
+    box-sizing: border-box;
+    background-color: #151f2e;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.3s ease;
+    /* position: relative; Đặt vị trí tương đối để popup có thể hiển thị đúng vị trí */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* Cải thiện kiểu cho popup */
 .popup {
 display: none;
 position: absolute;
@@ -135,54 +73,54 @@ transition: opacity 0.5s ease-in-out; /* Thêm hiệu ứng chuyển động mư
 display: block;
 opacity: 1; /* Khi di chuột qua mục, hiển thị popup */
 }
-    /* Cải thiện kiểu cho hình ảnh và nút */
-    .grid-item img {
-        width: 100%;
-        height: auto;
-        border-radius: 4px;
-        transition: all 0.3s ease;
-    }
-    .grid-item img:hover {
-        transform: scale(1.05);
-    }
-    .grid-item button {
-        display: inline-block;
-        margin-top: 10px;
-        padding: 10px 20px;
-        border: none;
-        background-color: #007BFF;
-        color: #fff;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        border-radius: 4px;
-    }
-    .grid-item button:hover {
-        background-color: #0056b3;
-    }
-    button {
-        display: inline-block;
-        padding: 10px 20px;
-        border: none;
-        background-color: #007BFF;
-        color: #fff;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        border-radius: 4px;
-        box-shadow: 0 6px #0056b3; /* Tạo bóng dưới nút để tạo hiệu ứng 3D */
-        font-family: 'Quicksand', sans-serif;
-    }
-    /* Kiểu cho lưới khi kích thước màn hình nhỏ hơn 600px */
+/* Cải thiện kiểu cho hình ảnh và nút */
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.grid-item img:hover {
+    transform: scale(1.05);
+}
+.grid-item button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+.grid-item button:hover {
+    background-color: #0056b3;
+}
+button {
+    display: inline-block;
+padding: 10px 20px;
+border: none;
+background-color: #007BFF;
+color: #fff;
+text-transform: uppercase;
+cursor: pointer;
+transition: all 0.3s ease;
+border-radius: 4px;
+box-shadow: 0 6px #0056b3; /* Tạo bóng dưới nút để tạo hiệu ứng 3D */
+    font-family: 'Quicksand', sans-serif;
+}
+/* Kiểu cho lưới khi kích thước màn hình nhỏ hơn 600px */
 @media (max-width: 600px) {
 .grid-container {
-    grid-template-columns: 1fr; /* Chỉ hiển thị một mục trên mỗi hàng */
+grid-template-columns: 1fr; /* Chỉ hiển thị một mục trên mỗi hàng */
 }
 .grid-item {
-    margin: 10px; /* Thêm một chút không gian giữa các mục */
+margin: 10px; /* Thêm một chút không gian giữa các mục */
 }
 .popup {
-    right: 0; /* Đặt popup ngay bên phải của mục */
+right: 0; /* Đặt popup ngay bên phải của mục */
 }
 }
 
@@ -210,20 +148,4 @@ box-shadow: 0 4px #0056b3; /* Làm cho bóng dưới nút nhỏ lại */
 button:active {
 top: 6px; /* Di chuyển nút xuống */
 box-shadow: 0 0 #0056b3; /* Làm cho bóng dưới nút biến mất */
-}
-.navbar {
-overflow: hidden;
-background-color: #333;
-}
-.navbar a {
-float: left;
-display: block;
-color: white;
-text-align: center;
-padding: 14px 20px;
-text-decoration: none;
-}
-.navbar a:hover {
-background-color: #ddd;
-color: black;
 }

@@ -1,0 +1,426 @@
+    /* Your CSS styles go here */
+    * {
+        margin: 0; padding: 0;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        font-weight: normal;
+        /* font-family: 'Quicksand', sans-serif; */
+    }
+    body {
+        background: #0f0f0f;
+        font-family: 'Quicksand', sans-serif;
+          /* Thay đổi con trỏ chuột khi di chuyển */
+          cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-cursor.cur'), auto;
+    }
+
+/* Thay đổi con trỏ chuột khi di chuyển lên một phần tử */
+body:hover {
+cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-cursor.cur'), auto;
+}
+ /* Thay đổi con trỏ chuột khi nhấp chuột */
+body:active {
+cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
+}
+a:hover {
+cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
+}
+/* 
+a:hover{
+border: 1px solid white; 
+cursor: url('https://github.com/Huyenuiio/Fate-Zero/raw/main/cursor%20(1).cur'), auto;                                         /*  //hover thẻ a 
+} */
+
+
+.cover:hover{
+    border: 1px solid white; 
+    cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
+}
+
+
+
+    .heading {
+        color: #728197;
+        font-size: 40px;
+        text-align: center;
+        padding: 10px;  
+        font-weight: 700;
+        /* cursor: none;                   ủa alo tại sao lại cur sor none :)) */
+    }
+    
+   
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 15px;
+        align-items: flex-start;
+        padding: 5px 5%;
+    }
+    .container .main-video {
+        background: #1a1a1a;
+        border-radius: 5px;
+        padding: 10px;
+      
+    }
+    .container .main-video .video .iframe {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        height: 431px; 
+        border:none; 
+        
+    }
+    .container .main-video .title {
+        background: rgb(33 33 33);
+        color: rgb(255, 250, 250);
+        font-size: 23px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-weight: 700;
+    }
+    .container .playlist {
+        background: rgb(33 33 33);
+        border-radius: 5px;
+        height: 520px;
+        overflow-y: scroll;
+    }
+    .container .playlist::-webkit-scrollbar {
+        width: 7px;
+    }
+    .container .playlist::-webkit-scrollbar-track {
+        background: #ccc;
+        border-radius: 50px; 
+    }
+    .container .playlist::-webkit-scrollbar-thumb {
+        background: #666;
+        border-radius: 50px; 
+    }
+    .container .playlist .vid {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background: rgba(0,0,0,.1);
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid rgba(0,0,0,.1);
+        cursor: pointer;
+    }
+    .container .playlist .vid:hover{
+        background: rgb(39 39 39);
+        cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
+        border: 1px solid white;
+    }
+    .container .playlist .vid:hover .title{
+        color: #3db4d0;
+    }
+    .container .playlist .vid.active{
+        background: rgb(26 35 49);
+        border: 1px solid white;
+    }
+    .container .playlist .vid.active .title{
+        color: #5eead4;
+        font-weight: 700;
+    }
+    .container .playlist .vid .title{
+        color: hsla(0,0%,100%,.5);
+        font-size: 17px;
+    }
+    @media (max-width:991px){   
+        .container {
+            grid-template-columns: 1.5fr 1fr;
+            padding: 10px;
+        }}
+    @media (max-width:768px){
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+    @media (max-width: 1540px){
+.media-page-unscoped .content .grid-wrap {
+grid-template-columns: repeat(2, 1fr);
+}}
+@media (max-width: 1040px){
+.media-page-unscoped .content .grid-wrap {
+grid-template-columns: repeat(1, 1fr);
+}
+}
+    .container .playlist .vid img{
+width: 100px;
+border-radius: 5px;
+position: 50%;
+grid-area: image;
+size: cover;
+
+}
+
+
+.playlist .vid iframe{
+display: none;
+}
+/* ------------------------------------------------hieu-ung-chuyen-dong-luot-len-luot-xuong---------------------------------------------------------------------- */
+
+.container, .video-list, .heading {
+/* Thời gian chuyển đổi */
+transition: all 0.5s ease-in-out;
+}
+
+.container:hover, .video-list:hover, .heading:hover {
+/* Hiệu ứng lướt lên */
+transform: translateY(-10px);
+}
+
+.container:active, .video-list:active, .heading:active {
+/* Hiệu ứng lướt xuống */
+transform: translateY(10px);
+}
+/* _____________________________________________________________________________________________________________________________ */
+
+/* phần gird */
+.media-page-unscoped .content .grid-wrap {
+display: grid;
+grid-column-gap: 30px;
+grid-row-gap: 15px;
+grid-template-columns: repeat(3, 1fr);
+}
+
+.container .grid-wrap {
+display: grid;
+grid-column-gap: 30px;
+grid-row-gap: 15px;
+
+}
+
+
+
+
+
+.container h2 {
+margin-bottom: 10px;
+}
+h2 {
+font-size: 1.4rem;
+font-weight: 500;
+}
+h1, h2 {
+color: #fffafa;
+margin: 0;
+padding: 0;
+
+}
+
+
+.media-preview-card[data-v-6dc78144] {
+background: #9fadbd;
+border-radius: 3px;
+display: inline-grid;
+grid-template-columns: 85px auto;
+height: 115px;
+max-height: 115px;
+}
+
+.cover[data-v-6dc78144] {
+background-position: 50%;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 3px 0 0 3px;
+}
+
+a:visited {
+color: inherit;
+}
+
+
+[lazy=error], [lazy=loaded] {
+opacity: 1 !important;
+}
+a{
+color: inherit;
+text-decoration: none;
+transition: .15s;
+outline: 0;
+background-color: transparent;
+}
+.cover .image-overlay[data-v-6dc78144], .cover .image-text[data-v-6dc78144] {
+display: none;
+}
+/* trên là phần thẻ a */
+/* dưới là kế bên thẻ a */
+.content[data-v-6dc78144] {
+background-color: rgb(33 33 33);
+border-radius: 0 3px 3px 0;
+padding: 12px;
+position: relative;
+}
+.content[data-v-6dc78144]:hover{
+border:1px solid white;
+}
+
+.info-header[data-v-6dc78144]{
+color: #3DB4F2;
+/* font-size: 1.2rem; */
+font-size: 14px;
+font-weight: 500;
+/* margin-bottom: 8px; */
+}
+/* tới phần title */
+
+.title[data-v-6dc78144] {
+display: -webkit-box;
+font-size: 1.4rem;
+overflow: hidden;
+word-break: break-word;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+color: #9fadbd;
+font-weight: 700;
+/* margin-bottom: 10px; */
+
+}
+.title[data-v-6dc78144]:hover {
+    border: 1px solid white; 
+    /* cursor: url('https://github.com/Huyenuiio/Fate-Zero/raw/main/cursor%20(1).cur'), auto; */
+    }
+
+.info[data-v-6dc78144] {
+bottom: 12px;
+/* color: rgb(133, 150, 165); */
+color: #8596A5;
+font-size: 1.2rem;
+left: 12px;
+position: absolute;
+}
+
+.artplayer-app {
+ /* z-index: 10;
+cursor: pointer; */
+ /* width: 853px; */
+height: 480px; 
+/* inset: 0;  */
+ position: relative;   
+font-family: 'Quicksand', sans-serif;
+
+}
+
+/* hover trong main video */
+.art-video:hover{
+    cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
+}
+.art-video:active{
+    cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
+}
+
+/*   hiệu ứng loading*/
+#loading{
+    width: 100%;
+height: 100%;
+background: #fff;
+background: #181a1b;
+top: 0;
+left: 0;
+position: fixed;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+z-index: 1000;
+overflow: hidden;
+}
+
+
+#loading .logo {
+/* width: 600px; */
+-webkit-filter: blur(20px);
+filter: blur(20px);
+opacity: 0;
+-webkit-transition: all .5s ease;
+transition: all .5s ease;
+}  
+
+
+
+#custom-alert {
+position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background: rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+}
+
+#custom-alert-content {
+/* background: white; */
+/* padding: 20px; */
+/* border-radius: 5px; */
+background: back;
+padding: 36px;
+border-radius: 5px;
+font-size: 23px;
+font-weight: 700;
+color: white;
+}
+
+#custom-alert-close {
+margin-top: 20px;
+margin-left: 10px;
+padding: 10px;
+border-radius: 10px;
+}
+#custom-alert-close:hover {
+    background-color: #3db4d0;
+    color: white;
+    cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
+}
+
+
+
+
+.art-video-player .art-subtitle{
+    font-size: 14px;
+    color:  rgb(255, 255, 255);
+    /* font-weight: bold; */
+    /* font-family: "Assistant", sans-serif; */
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    /* font-weight: 700; */
+    font-weight: 400;
+    border: none;
+    border:  rgb(255, 255, 255);
+    text-shadow: #000 0px 0px 5px;
+
+    
+    
+
+}
+
+/* .art-video-player .art-subtitle {
+z-index: 20;
+text-align: center;
+pointer-events: none;
+justify-content: center;
+align-items: center;
+gap: var(--art-subtitle-gap);
+bottom: var(--art-subtitle-bottom);
+font-size: var(--art-subtitle-font-size);
+transition: bottom var(--art-transition-duration) ease;
+text-shadow: var(--art-subtitle-border) 1px 0 1px, var(--art-subtitle-border) 0 1px 1px, var(--art-subtitle-border) -1px 0 1px, var(--art-subtitle-border) 0 -1px 1px, var(--art-subtitle-border) 1px 1px 1px, var(--art-subtitle-border) -1px -1px 1px, var(--art-subtitle-border) 1px -1px 1px, var(--art-subtitle-border) -1px 1px 1px;
+flex-direction: column;
+width: 100%;
+padding: 0 5%;
+display: none;
+position: absolute;
+font-size:24px;
+
+} */
+
