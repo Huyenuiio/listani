@@ -339,9 +339,10 @@ var art = new Artplayer({
     ],
 
     thumbnails: {
-        url: '#',
+        url: './poster/ff.png',
         number: 60,
         column: 10,
+        scale: 0.85,
     },
     subtitle: {
         url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/huyenndevv/MakeHeroinegaOosugiruEP1/%5BSubtitleTools.com%5D%20%5BSubsPlease%5D%20Make%20Heroine%20ga%20Oosugiru!%20-%2001%20(480p)%20%5BFF6DDF71%5D.srt',

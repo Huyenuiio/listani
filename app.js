@@ -32,4 +32,3 @@ var popup = item.getElementsByClassName('popup')[0];
 popup.style.display = 'none';
 }
 
-
