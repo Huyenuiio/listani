@@ -166,7 +166,7 @@ function playM3u8(video, url, art) {
 
 var art = new Artplayer({
     container: '.artplayer-app',
-    url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/huyenndevv/MakeHeroinegaOosugiruEP1/output.m3u8', 
+    url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/thaoquyen/MakeEP5/output.m3u8', 
     type: 'm3u8',
     title: 'Ep.1 ...',
     poster: 'https://raw.githubusercontent.com/Huyenuiio/MakeHeroinegaOosugiru/main/img/kv_visual06.jpg',
@@ -221,7 +221,7 @@ var art = new Artplayer({
                 {
                     default: true,
                     html: 'Vietnamese',
-                    url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/huyenndevv/MakeHeroinegaOosugiruEP1/%5BSubtitleTools.com%5D%20%5BSubsPlease%5D%20Make%20Heroine%20ga%20Oosugiru!%20-%2001%20(480p)%20%5BFF6DDF71%5D.srt',
+                    url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/thaoquyen/MakeEP5/%5BSubtitleTools.com%5D%20%5BSubsPlease%5D%20Make%20Heroine%20ga%20Oosugiru!%20-%2005%20(480p)%20%5B61869276%5D.srt',
                 },
                 // {
                 //     html: 'Tập 2 - Sự thất bại đã hứa hẹn',
@@ -333,19 +333,19 @@ var art = new Artplayer({
         // },
         {
             html: 'FHD 1080P',
-            url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/huyenndevv/MakeHeroinegaOosugiruEP1/output.m3u8',
+            url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/thaoquyen/MakeEP5/output.m3u8',
         },
    
     ],
 
     thumbnails: {
-        url: './poster/ff.png',
+        url: './thumbnails/output_thumbnail.jpg',
         number: 60,
         column: 10,
         scale: 0.85,
     },
     subtitle: {
-        url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/huyenndevv/MakeHeroinegaOosugiruEP1/%5BSubtitleTools.com%5D%20%5BSubsPlease%5D%20Make%20Heroine%20ga%20Oosugiru!%20-%2001%20(480p)%20%5BFF6DDF71%5D.srt',
+        url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/thaoquyen/MakeEP5/%5BSubtitleTools.com%5D%20%5BSubsPlease%5D%20Make%20Heroine%20ga%20Oosugiru!%20-%2005%20(480p)%20%5B61869276%5D.srt',
         type: 'srt',    
         style: {
             // color: 'white',
@@ -460,23 +460,15 @@ art.on('ready', () => {
 
 
 
-// Danh sách các video trong playlist
-// var playlist = document.querySelectorAll('.playlist .vid');
 
-// // Lặp qua từng video trong playlist
-// for (let i = 0; i < playlist.length; i++) {
-//     // Thêm sự kiện click cho mỗi video
-//     playlist[i].addEventListener('click', function() {
-//         // Xóa class 'active' khỏi tất cả các video
-//         for (let j = 0; j < playlist.length; j++) {
-//             playlist[j].classList.remove('active');
-//         }
 
-//         // Thêm class 'active' cho video được chọn
-//         this.classList.add('active');
 
-//     });
-// }
+
+
+
+
+
+
 
 
 const videoElement = document.querySelector('.art-video-player');
@@ -646,28 +638,6 @@ window.addEventListener('resize', updateFontSize);
 
 
 
-// hàm chuyển đổi trang html khi nhấn vào playlist
-// function navigateToHtmlFile(element) {
-//     const videoItem = element.closest('.vid');
-//     const htmlFile = videoItem.getAttribute('data-html-file');
-//     if (htmlFile) {
-//         window.location.href = htmlFile;
-//     }
-// }
-
-// document.querySelectorAll('.vid .img, .vid .title').forEach(element => {
-//     element.addEventListener('click', function() {
-//         navigateToHtmlFile(this);
-//     });
-// });
-
-
-
-
-
-
-
-
 
 
 
@@ -731,18 +701,18 @@ const EP1 = new listep(
     "Tập 1 - Người Bạn Thời Thơ Ấu",
     "../Tap1/eb81c57e.html",
     "../Tap1/poster/artplayer_05_28.png",
-    true // Đặt video này làm active ngay từ đầu
 );
 const EP2 = new listep(
     "Tập 2 - Sự thất bại đã hứa hẹn",
     "../Tap2/02a50945.html",
     "../Tap2/poster/artplayer_12_23.png",
-    
+
 );
 const EP3 = new listep(
     "Tập 3 - Thua trận trước khi chiến đấu",
     "../Tap3/74a6575e.html",
     "../Tap3/poster/artplayer_13_23.png",
+    
 );
 const EP4 = new listep(
     "Tập 4 - Khi bạn nhìn chằm chằm",
@@ -753,6 +723,7 @@ const EP5 = new listep(
     "Tập 5 - Asagumo Chihaya bị dẫn dắt lạc lối",
     "../Tap5/03a77784.html",
     "../Tap5/poster/artplayer_10_09.png",
+    true // Đặt video này làm active ngay từ đầu
 );
 
 const EP6 = new listep(

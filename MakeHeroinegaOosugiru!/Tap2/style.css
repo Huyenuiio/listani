@@ -385,13 +385,15 @@ border-radius: 10px;
 
 
 
-
+/* chinh subtitle trong video*/
 .art-video-player .art-subtitle{
     font-size: 14px;
     color:  rgb(255, 255, 255);
     /* font-weight: bold; */
     /* font-family: "Assistant", sans-serif; */
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Be Vietnam Pro", sans-serif; 
+       /* font-family: "Noto Serif Oriya", sans-serif; */
     font-style: normal;
     /* font-weight: 700; */
     font-weight: 400;

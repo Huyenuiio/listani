@@ -18,9 +18,9 @@ h1 {
 /* Cải thiện kiểu cho thanh tìm kiếm */
 #site-search {
     display: block;
-    width: 80%;
+    width: 15.6%;
     max-width: 600px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     padding: 10px;
     border: 1px solid #151f2e;
     border-radius: 4px;
@@ -28,7 +28,8 @@ h1 {
     font-family: 'Quicksand', sans-serif;
     background-color: #151f2e;
     color: #9FADBD;
-    
+    margin-top: 100px;
+    margin-left: 20px;
 }
 /* Cải thiện kiểu cho lưới và các mục */
 .grid-container {
@@ -47,7 +48,8 @@ h1 {
     text-align: center;
     transition: all 0.3s ease;
     /* position: relative; Đặt vị trí tương đối để popup có thể hiển thị đúng vị trí */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+  
 }
 .grid-item:hover {
     transform: scale(1.05);
@@ -65,24 +67,27 @@ padding: 10px;
 background-color: #1d232e;
 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
-z-index: 1000; /* Đặt popup lên trên cùng */
+ z-index: 999;/* Đặt popup lên trên cùng */
 opacity: 0; /* Bắt đầu với popup không hiển thị */
 transition: opacity 0.5s ease-in-out; /* Thêm hiệu ứng chuyển động mượt mà */
 }
 .grid-item:hover .popup {
 display: block;
 opacity: 1; /* Khi di chuột qua mục, hiển thị popup */
+
 }
+
 /* Cải thiện kiểu cho hình ảnh và nút */
 .grid-item img {
     width: 100%;
     height: auto;
     border-radius: 4px;
     transition: all 0.3s ease;
-}
-.grid-item img:hover {
+ 
+} 
+ .grid-item img:hover {
     transform: scale(1.05);
-}
+} 
 .grid-item button {
     display: inline-block;
     margin-top: 10px;
@@ -148,4 +153,105 @@ box-shadow: 0 4px #0056b3; /* Làm cho bóng dưới nút nhỏ lại */
 button:active {
 top: 6px; /* Di chuyển nút xuống */
 box-shadow: 0 0 #0056b3; /* Làm cho bóng dưới nút biến mất */
+}
+
+
+
+.navbar[data-v-62eacfff]{
+    background-color: #152232;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    transition: background .8s ease, color .2s;
+    left: 0px;
+    user-select: none;
+    height: 64px;
+    top: 0px;
+   
+}
+
+.warp[data-v-62eacfff]{
+     align-items: center;
+     display: flex;
+     height: 100%;
+     margin-left: 50px;
+    margin-right: 50px;
+    max-width: 1050px;
+}
+.link[data-v-62eacfff]{
+    align-items: center;
+    display: inline-flex;
+    font-family: Quicksand;
+    font-size: 1.4rem;
+    font-weight: 600;
+    justify-content: center;
+    text-transform: capitalize;
+    width: 100%;
+    letter-spacing: .01em;
+    padding: 18px 16px;
+    text-decoration: none;
+    color: #96a6bb;
+}
+
+
+.link[data-v-62eacfff]:hover{
+    color: #d3d5f3;
+}
+a:visited{
+    color: inherit;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: .15s;
+    outline: 0;
+}
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.progress[data-v-5d42c114] {
+    background-color: #29a6ff;
+    border-radius: 0 10px 10px 0;
+    height: 4px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: width .3s ease, opacity .2s;
+    width: 0;
+    z-index: 99999;
 }

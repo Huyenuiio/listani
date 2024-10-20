@@ -1,23 +1,23 @@
     /* Your CSS styles go here */
     * {
-        margin: 0; padding: 0;
-        box-sizing: border-box;
-        text-transform: capitalize;
-        font-weight: normal;
-        /* font-family: 'Quicksand', sans-serif; */
-    }
-    body {
-        background: #0f0f0f;
-        font-family: 'Quicksand', sans-serif;
-          /* Thay đổi con trỏ chuột khi di chuyển */
-          cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-cursor.cur'), auto;
-    }
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      text-transform: capitalize;
+      font-weight: normal;
+      /* font-family: 'Quicksand', sans-serif; */
+  }
+  body {
+      background: #0f0f0f;
+      font-family: 'Quicksand', sans-serif;
+        /* Thay đổi con trỏ chuột khi di chuyển */
+        cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-cursor.cur'), auto;
+  }
 
 /* Thay đổi con trỏ chuột khi di chuyển lên một phần tử */
 body:hover {
 cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-cursor.cur'), auto;
 }
- /* Thay đổi con trỏ chuột khi nhấp chuột */
+/* Thay đổi con trỏ chuột khi nhấp chuột */
 body:active {
 cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
 }
@@ -32,110 +32,110 @@ cursor: url('https://github.com/Huyenuiio/Fate-Zero/raw/main/cursor%20(1).cur'),
 
 
 .cover:hover{
-    border: 1px solid white; 
-    cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
+  border: 1px solid white; 
+  cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
 }
 
 
 
-    .heading {
-        color: #728197;
-        font-size: 40px;
-        text-align: center;
-        padding: 10px;  
-        font-weight: 700;
-        /* cursor: none;                   ủa alo tại sao lại cur sor none :)) */
-    }
+  .heading {
+      color: #728197;
+      font-size: 40px;
+      text-align: center;
+      padding: 10px;  
+      font-weight: 700;
+      /* cursor: none;                   ủa alo tại sao lại cur sor none :)) */
+  }
+  
+ 
+  .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 15px;
+      align-items: flex-start;
+      padding: 5px 5%;
+  }
+  .container .main-video {
+      background: #1a1a1a;
+      border-radius: 5px;
+      padding: 10px;
     
-   
-    .container {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 15px;
-        align-items: flex-start;
-        padding: 5px 5%;
-    }
-    .container .main-video {
-        background: #1a1a1a;
-        border-radius: 5px;
-        padding: 10px;
+  }
+  .container .main-video .video .iframe {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      height: 431px; 
+      border:none; 
       
-    }
-    .container .main-video .video .iframe {
-        width: 100%;
-        border-radius: 15px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.5);
-        height: 431px; 
-        border:none; 
-        
-    }
-    .container .main-video .title {
-        background: rgb(33 33 33);
-        color: rgb(255, 250, 250);
-        font-size: 23px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        font-weight: 700;
-    }
-    .container .playlist {
-        background: rgb(33 33 33);
-        border-radius: 5px;
-        height: 520px;
-        overflow-y: scroll;
-    }
-    .container .playlist::-webkit-scrollbar {
-        width: 7px;
-    }
-    .container .playlist::-webkit-scrollbar-track {
-        background: #ccc;
-        border-radius: 50px; 
-    }
-    .container .playlist::-webkit-scrollbar-thumb {
-        background: #666;
-        border-radius: 50px; 
-    }
-    .container .playlist .vid {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        background: rgba(0,0,0,.1);
-        border-radius: 5px;
-        margin: 10px;
-        padding: 10px;
-        border: 1px solid rgba(0,0,0,.1);
-        cursor: pointer;
-    }
-    .container .playlist .vid:hover{
-        background: rgb(39 39 39);
-        cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
-        border: 1px solid white;
-    }
-    .container .playlist .vid:hover .title{
-        color: #3db4d0;
-    }
-    .container .playlist .vid.active{
-        background: rgb(26 35 49);
-        border: 1px solid white;
-    }
-    .container .playlist .vid.active .title{
-        color: #5eead4;
-        font-weight: 700;
-    }
-    .container .playlist .vid .title{
-        color: hsla(0,0%,100%,.5);
-        font-size: 17px;
-    }
-    @media (max-width:991px){   
-        .container {
-            grid-template-columns: 1.5fr 1fr;
-            padding: 10px;
-        }}
-    @media (max-width:768px){
-        .container {
-            grid-template-columns: 1fr;
-        }
-    }
-    @media (max-width: 1540px){
+  }
+  .container .main-video .title {
+      background: rgb(33 33 33);
+      color: rgb(255, 250, 250);
+      font-size: 23px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-weight: 700;
+  }
+  .container .playlist {
+      background: rgb(33 33 33);
+      border-radius: 5px;
+      height: 520px;
+      overflow-y: scroll;
+  }
+  .container .playlist::-webkit-scrollbar {
+      width: 7px;
+  }
+  .container .playlist::-webkit-scrollbar-track {
+      background: #ccc;
+      border-radius: 50px; 
+  }
+  .container .playlist::-webkit-scrollbar-thumb {
+      background: #666;
+      border-radius: 50px; 
+  }
+  .container .playlist .vid {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: rgba(0,0,0,.1);
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid rgba(0,0,0,.1);
+      cursor: pointer;
+  }
+  .container .playlist .vid:hover{
+      background: rgb(39 39 39);
+      cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
+      border: 1px solid white;
+  }
+  .container .playlist .vid:hover .title{
+      color: #3db4d0;
+  }
+  .container .playlist .vid.active{
+      background: rgb(26 35 49);
+      border: 1px solid white;
+  }
+  .container .playlist .vid.active .title{
+      color: #5eead4;
+      font-weight: 700;
+  }
+  .container .playlist .vid .title{
+      color: hsla(0,0%,100%,.5);
+      font-size: 17px;
+  }
+  @media (max-width:991px){   
+      .container {
+          grid-template-columns: 1.5fr 1fr;
+          padding: 10px;
+      }}
+  @media (max-width:768px){
+      .container {
+          grid-template-columns: 1fr;
+      }
+  }
+  @media (max-width: 1540px){
 .media-page-unscoped .content .grid-wrap {
 grid-template-columns: repeat(2, 1fr);
 }}
@@ -144,7 +144,7 @@ grid-template-columns: repeat(2, 1fr);
 grid-template-columns: repeat(1, 1fr);
 }
 }
-    .container .playlist .vid img{
+  .container .playlist .vid img{
 width: 100px;
 border-radius: 5px;
 position: 50%;
@@ -277,9 +277,9 @@ font-weight: 700;
 
 }
 .title[data-v-6dc78144]:hover {
-    border: 1px solid white; 
-    /* cursor: url('https://github.com/Huyenuiio/Fate-Zero/raw/main/cursor%20(1).cur'), auto; */
-    }
+  border: 1px solid white; 
+  /* cursor: url('https://github.com/Huyenuiio/Fate-Zero/raw/main/cursor%20(1).cur'), auto; */
+  }
 
 .info[data-v-6dc78144] {
 bottom: 12px;
@@ -291,27 +291,27 @@ position: absolute;
 }
 
 .artplayer-app {
- /* z-index: 10;
+/* z-index: 10;
 cursor: pointer; */
- /* width: 853px; */
+/* width: 853px; */
 height: 480px; 
 /* inset: 0;  */
- position: relative;   
+position: relative;   
 font-family: 'Quicksand', sans-serif;
 
 }
 
 /* hover trong main video */
 .art-video:hover{
-    cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
+  cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
 }
 .art-video:active{
-    cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
+  cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
 }
 
 /*   hiệu ứng loading*/
 #loading{
-    width: 100%;
+  width: 100%;
 height: 100%;
 background: #fff;
 background: #181a1b;
@@ -378,9 +378,9 @@ padding: 10px;
 border-radius: 10px;
 }
 #custom-alert-close:hover {
-    background-color: #3db4d0;
-    color: white;
-    cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
+  background-color: #3db4d0;
+  color: white;
+  cursor: url('https://github.com/Huyenuiio/MakeHeroinegaOosugiru/raw/main/cur/cute-coffee-and-eclair-pointer.cur'), auto;
 }
 
 
@@ -388,24 +388,25 @@ border-radius: 10px;
 
 /* chinh subtitle trong video*/
 .art-video-player .art-subtitle{
-    font-size: 14px;
-    color:  rgb(255, 255, 255);
-    /* font-weight: bold; */
-    /* font-family: "Assistant", sans-serif; */
-    /* font-family: "Roboto", sans-serif; */
-    font-family: "Be Vietnam Pro", sans-serif; 
-       /* font-family: "Noto Serif Oriya", sans-serif; */
-    font-style: normal;
-    /* font-weight: 700; */
-    font-weight: 400;
-    border: none;
-    border:  rgb(255, 255, 255);
-    text-shadow: #000 0px 0px 5px;
+  font-size: 14px;
+  color:  rgb(255, 255, 255);
+  /* font-weight: bold; */
+  /* font-family: "Assistant", sans-serif; */
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Be Vietnam Pro", sans-serif; 
+     /* font-family: "Noto Serif Oriya", sans-serif; */
+  font-style: normal;
+  /* font-weight: 700; */
+  font-weight: 400;
+  border: none;
+  border:  rgb(255, 255, 255);
+  text-shadow: #000 0px 0px 5px;
 
-    
-    
+  
+  
 
 }
+
 /* .art-video-player .art-subtitle {
 z-index: 20;
 text-align: center;

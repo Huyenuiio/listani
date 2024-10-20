@@ -166,7 +166,7 @@ function playM3u8(video, url, art) {
 
 var art = new Artplayer({
     container: '.artplayer-app',
-    url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/huyenndevv/MakeHeroinegaOosugiruEP1/output.m3u8', 
+    url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/huyenndevv/MakeHeroinegaOosugiruEP2/output.m3u8', 
     type: 'm3u8',
     title: 'Ep.1 ...',
     poster: 'https://raw.githubusercontent.com/Huyenuiio/MakeHeroinegaOosugiru/main/img/kv_visual06.jpg',
@@ -221,7 +221,7 @@ var art = new Artplayer({
                 {
                     default: true,
                     html: 'Vietnamese',
-                    url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/huyenndevv/MakeHeroinegaOosugiruEP1/%5BSubtitleTools.com%5D%20%5BSubsPlease%5D%20Make%20Heroine%20ga%20Oosugiru!%20-%2001%20(480p)%20%5BFF6DDF71%5D.srt',
+                    url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/huyenndevv/MakeHeroinegaOosugiruEP2/%5BSubtitleTools.com%5D%20%5BSubsPlease%5D%20Make%20Heroine%20ga%20Oosugiru!%20-%2002%20(480p)%20%5B71BB81AC%5D.srt',
                 },
                 // {
                 //     html: 'Tập 2 - Sự thất bại đã hứa hẹn',
@@ -333,18 +333,19 @@ var art = new Artplayer({
         // },
         {
             html: 'FHD 1080P',
-            url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/huyenndevv/MakeHeroinegaOosugiruEP1/output.m3u8',
+            url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/huyenndevv/MakeHeroinegaOosugiruEP2/output.m3u8',
         },
    
     ],
 
     thumbnails: {
-        url: '#',
+        url: './poster/iu.png',
         number: 60,
         column: 10,
+        scale: 0.85,
     },
     subtitle: {
-        url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/huyenndevv/MakeHeroinegaOosugiruEP1/%5BSubtitleTools.com%5D%20%5BSubsPlease%5D%20Make%20Heroine%20ga%20Oosugiru!%20-%2001%20(480p)%20%5BFF6DDF71%5D.srt',
+        url: 'https://raw.githubusercontent.com/Huyenuiio/gittesst2/huyenndevv/MakeHeroinegaOosugiruEP2/%5BSubtitleTools.com%5D%20%5BSubsPlease%5D%20Make%20Heroine%20ga%20Oosugiru!%20-%2002%20(480p)%20%5B71BB81AC%5D.srt',
         type: 'srt',    
         style: {
             // color: 'white',
@@ -459,23 +460,25 @@ art.on('ready', () => {
 
 
 
-// Danh sách các video trong playlist
-var playlist = document.querySelectorAll('.playlist .vid');
 
-// Lặp qua từng video trong playlist
-for (let i = 0; i < playlist.length; i++) {
-    // Thêm sự kiện click cho mỗi video
-    playlist[i].addEventListener('click', function() {
-        // Xóa class 'active' khỏi tất cả các video
-        for (let j = 0; j < playlist.length; j++) {
-            playlist[j].classList.remove('active');
-        }
 
-        // Thêm class 'active' cho video được chọn
-        this.classList.add('active');
 
-    });
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const videoElement = document.querySelector('.art-video-player');
@@ -645,7 +648,175 @@ window.addEventListener('resize', updateFontSize);
 
 
 
-// hàm chuyển đổi trang html khi nhấn vào playlist
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class listep {
+    constructor(title, src,  img, isActive = false) {
+        this.title = title;
+        this.src   = src;
+        this.img   = img;
+        this.isActive = isActive; // Thêm thuộc tính isActive để kiểm tra xem video có được chọn hay không
+       
+    }
+
+    render() {
+        // Nếu isActive là true, thêm class 'active', nếu không thì không thêm
+        const activeClass = this.isActive ? 'active' : '';
+        return `
+    <div class="vid ${activeClass}" data-src="#" data-title="${this.title}" data-html-file="${this.src}">
+    <!-- iframe và hình ảnh của video -->
+    <img class="img" src="${this.img}" alt="${this.title}">
+    <h3 class="title">${this.title}</h3>
+    <!-- Thêm thông tin khác nếu cần -->
+    </div>
+        `;
+    }
+}
+const EP1 = new listep(
+    "Tập 1 - Người Bạn Thời Thơ Ấu",
+    "../Tap1/eb81c57e.html",
+    "../Tap1/poster/artplayer_05_28.png",
+);
+const EP2 = new listep(
+    "Tập 2 - Sự thất bại đã hứa hẹn",
+    "../Tap2/02a50945.html",
+    "../Tap2/poster/artplayer_12_23.png",
+    true // Đặt video này làm active ngay từ đầu
+
+);
+const EP3 = new listep(
+    "Tập 3 - Thua trận trước khi chiến đấu",
+    "../Tap3/74a6575e.html",
+    "../Tap3/poster/artplayer_13_23.png",
+);
+const EP4 = new listep(
+    "Tập 4 - Khi bạn nhìn chằm chằm",
+    "../Tap4/222d2a4e.html",
+    "../Tap4/poster/artplayer_12_05.png",
+);
+const EP5 = new listep(
+    "Tập 5 - Asagumo Chihaya bị dẫn dắt lạc lối",
+    "../Tap5/03a77784.html",
+    "../Tap5/poster/artplayer_10_09.png",
+);
+
+const EP6 = new listep(
+    "Tập 6 - Hãy để bất kỳ ai",
+    "../Tap6/b44af6bf.html",
+    "../Tap6/poster/artplayer_10_33.png",
+);
+
+const EP7 = new listep(
+    "Tập 7 - Mặt khác của một kết thúc có hậu",
+    "../Tap7/a2fa4ae5.html",
+    "../Tap7/poster/artplayer_10_32.png",
+);
+const EP8 = new listep(
+    "Tập 8 - Nếu bạn gặp rắc rối, hãy thoải mái tham khảo ý kiến",
+    "../Tap8/4168748c.html",
+    "../Tap8/poster/artplayer_13_59.png",
+);
+const EP9 = new listep(
+    "Tập 9 - Giáo viên nghĩ rằng đó là vết bẩn",
+    "../Tap9/59a558ff.html",
+    "../Tap9/poster/artplayer_12_07.png",
+);
+const EP10 = new listep(
+    "Tập 10 - Tôi cho rằng còn quá sớm",
+    "../Tap10/76e5e73c.html",
+    "../Tap10/poster/artplayer_16_22.png",
+);
+const EP11 = new listep(
+    "Tập 11 - Chúng ta hãy nói về trách nhiệm",
+    "../Tap11/e56ae586.html",
+    "../Tap11/poster/artplayer_13_22.png",
+);
+const EP12 = new listep(
+    "Tập 12 - Có phải tôi thực sự chỉ là",
+    "../Tap12/0769f4e6.html",
+    "../Tap12/poster/artplayer_13_53.png",
+);
+
+
+
+
+document.getElementById('listep').innerHTML += EP1.render();
+document.getElementById('listep').innerHTML += EP2.render();
+document.getElementById('listep').innerHTML += EP3.render();
+document.getElementById('listep').innerHTML += EP4.render();
+document.getElementById('listep').innerHTML += EP5.render();
+document.getElementById('listep').innerHTML += EP6.render();
+document.getElementById('listep').innerHTML += EP7.render();
+document.getElementById('listep').innerHTML += EP8.render();
+document.getElementById('listep').innerHTML += EP9.render();
+document.getElementById('listep').innerHTML += EP10.render();
+document.getElementById('listep').innerHTML += EP11.render();
+document.getElementById('listep').innerHTML += EP12.render();
+
+
+// Hàm điều hướng khi nhấn vào video
 function navigateToHtmlFile(element) {
     const videoItem = element.closest('.vid');
     const htmlFile = videoItem.getAttribute('data-html-file');
@@ -654,8 +825,30 @@ function navigateToHtmlFile(element) {
     }
 }
 
-document.querySelectorAll('.vid .img, .vid .title').forEach(element => {
-    element.addEventListener('click', function() {
-        navigateToHtmlFile(this);
+// Thêm sự kiện vào các phần tử khi được nhấp
+function addEventListenersToVideos() {
+    const playlist = document.querySelectorAll('.playlist .vid');
+
+    // Thêm sự kiện click cho mỗi video
+    for (let i = 0; i < playlist.length; i++) {
+        playlist[i].addEventListener('click', function() {
+            // Xóa class 'active' khỏi tất cả các video
+            for (let j = 0; j < playlist.length; j++) {
+                playlist[j].classList.remove('active');
+            }
+
+            // Thêm class 'active' cho video được chọn
+            this.classList.add('active');
+        });
+    }
+
+    // Thêm sự kiện điều hướng khi nhấn vào ảnh và tiêu đề
+    document.querySelectorAll('.vid .img, .vid .title').forEach(element => {
+        element.addEventListener('click', function() {
+            navigateToHtmlFile(this);
+        });
     });
-});
+}
+
+// Gọi hàm để thêm sự kiện cho các video sau khi render
+addEventListenersToVideos();
